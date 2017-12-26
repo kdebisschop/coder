@@ -10,7 +10,7 @@
 namespace DrupalPractice\Sniffs\FunctionCalls;
 
 use PHP_CodeSniffer\Files\File;
-use Drupal\Sniffs\Semantics\FunctionCall;
+use DrupalPractice\Sniffs\Semantics\FunctionCall;
 
 /**
  * Check that check_plain() is not used on literal strings.

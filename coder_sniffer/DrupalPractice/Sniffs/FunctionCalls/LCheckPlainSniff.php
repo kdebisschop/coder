@@ -10,7 +10,7 @@
 namespace DrupalPractice\Sniffs\FunctionCalls;
 
 use PHP_CodeSniffer\Files\File;
-use Drupal\Sniffs\Semantics\FunctionCall;
+use DrupalPractice\Sniffs\Semantics\FunctionCall;
 
 /**
  * The first argument of the l() function should not be check_plain()'ed.

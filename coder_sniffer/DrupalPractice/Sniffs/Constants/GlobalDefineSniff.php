@@ -10,7 +10,7 @@
 namespace DrupalPractice\Sniffs\Constants;
 
 use PHP_CodeSniffer\Files\File;
-use Drupal\Sniffs\Semantics\FunctionCall;
+use DrupalPractice\Sniffs\Semantics\FunctionCall;
 use DrupalPractice\Project;
 
 /**

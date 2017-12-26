@@ -10,7 +10,7 @@
 namespace DrupalPractice\Sniffs\FunctionCalls;
 
 use PHP_CodeSniffer\Files\File;
-use Drupal\Sniffs\Semantics\FunctionCall;
+use DrupalPractice\Sniffs\Semantics\FunctionCall;
 
 /**
  * \DrupalPractice\Sniffs\FunctionCalls\Checks that theme functions are not directly called.

@@ -7,10 +7,10 @@
  * @link     http://pear.php.net/package/PHP_CodeSniffer
  */
 
-namespace DrupalPractice;
+namespace Drupal;
 
 use PHP_CodeSniffer\Files\File;
-use DrupalPractice\Sniffs\InfoFiles\ClassFilesSniff;
+use Drupal\Sniffs\InfoFiles\ClassFilesSniff;
 use Symfony\Component\Yaml\Yaml;
 
 /**

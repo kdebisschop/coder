@@ -10,7 +10,7 @@
 namespace DrupalPractice\Sniffs\FunctionCalls;
 
 use PHP_CodeSniffer\Files\File;
-use Drupal\Sniffs\Semantics\FunctionCall;
+use DrupalPractice\Sniffs\Semantics\FunctionCall;
 
 /**
  * Check that variable_set() calls do not run check_plain() or other

@@ -10,7 +10,7 @@
 namespace DrupalPractice\Sniffs\FunctionCalls;
 
 use PHP_CodeSniffer\Files\File;
-use Drupal\Sniffs\Semantics\FunctionCall;
+use DrupalPractice\Sniffs\Semantics\FunctionCall;
 
 /**
  * Check that db_select() calls do not use {} braces for the table name.

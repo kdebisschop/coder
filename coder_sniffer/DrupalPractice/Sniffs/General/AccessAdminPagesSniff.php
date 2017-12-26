@@ -10,7 +10,7 @@
 namespace DrupalPractice\Sniffs\General;
 
 use PHP_CodeSniffer\Files\File;
-use Drupal\Sniffs\Semantics\FunctionDefinition;
+use DrupalPractice\Sniffs\Semantics\FunctionDefinition;
 
 /**
  * Throws a warning if the "access administration pages" string is found in

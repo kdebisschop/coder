@@ -10,7 +10,7 @@
 namespace DrupalPractice\Sniffs\FunctionDefinitions;
 
 use PHP_CodeSniffer\Files\File;
-use Drupal\Sniffs\Semantics\FunctionDefinition;
+use DrupalPractice\Sniffs\Semantics\FunctionDefinition;
 use DrupalPractice\Project;
 use PHP_CodeSniffer\Util\Tokens;
 

@@ -134,8 +134,11 @@ $a = ['1', '2',
 // Array indentation.
 $x = array(
   'foo' => 'bar',
-  'fi' => long_function_call('hsdfsdmfsldkfnmdflkngdfngfg',
-    'fghfghfghfghfgh', $z),
+  'fi' => long_function_call(
+    'hsdfsdmfsldkfnmdflkngdfngfg',
+    'fghfghfghfghfgh',
+    $z
+  ),
   'a' => 'b',
   'foo' => array(
     'blu' => 1,
@@ -146,8 +149,11 @@ $x = array(
 );
 $x = [
   'foo' => 'bar',
-  'fi' => long_function_call('hsdfsdmfsldkfnmdflkngdfngfg',
-    'fghfghfghfghfgh', $z),
+  'fi' => long_function_call(
+    'hsdfsdmfsldkfnmdflkngdfngfg',
+    'fghfghfghfghfgh',
+    $z
+  ),
   'a' => 'b',
   'foo' => [
     'blu' => 1,
@@ -253,17 +259,21 @@ $array = [
 
 // Indentation: multi line function call with array and fuction closer on the
 // same line.
-$result = example_fetch_data($id,
+$result = example_fetch_data(
+  $id,
   array(
     'include_detail' => TRUE,
     'quiet' => TRUE,
-  ));
+  )
+);
 some_function();
-$result = example_fetch_data($id,
+$result = example_fetch_data(
+  $id,
   [
     'include_detail' => TRUE,
     'quiet' => TRUE,
-  ]);
+  ]
+);
 some_function();
 
 // Indentation: multi line function call with array and closing brace on the
