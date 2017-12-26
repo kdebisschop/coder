@@ -49,8 +49,7 @@ class GoodUnitTest extends CoderSniffUnitTest
      * @return array The list of test files.
      */
     protected function getTestFiles($testFileBase) {
-        $dir = dirname(__FILE__);
-        $di  = new \DirectoryIterator($dir);
+        $di  = new \DirectoryIterator(__DIR__);
 
         foreach ($di as $file) {
             $path = $file->getPathname();

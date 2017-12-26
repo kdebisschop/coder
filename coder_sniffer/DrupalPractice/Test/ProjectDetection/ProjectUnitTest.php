@@ -13,7 +13,7 @@ class ProjectUnitTest extends \PHPUnit_Framework_TestCase
     /**
      * The mocked file object for testing.
      *
-     * @var \PHP_CodeSniffer\Files\File|PHPUnit_Framework_MockObject_MockObject
+     * @var \PHP_CodeSniffer\Files\File|\PHPUnit_Framework_MockObject_MockObject
      */
     protected $phpcsFile;
 
@@ -34,11 +34,11 @@ class ProjectUnitTest extends \PHPUnit_Framework_TestCase
     public function testInfoFileDetection()
     {
         $this->phpcsFile->expects($this->any())
-          ->method('getFilename')
-          // The file does not exist, but doesn't matter for this test.
-          ->will($this->returnValue(dirname(__FILE__) . '/modules/drupal6/test.php'));
+            ->method('getFilename')
+            // The file does not exist, but doesn't matter for this test.
+            ->will($this->returnValue(__DIR__ . '/modules/drupal6/test.php'));
 
-        $this->assertEquals(Project::getInfoFile($this->phpcsFile), dirname(__FILE__) . '/modules/drupal6/testmodule.info');
+        $this->assertEquals(Project::getInfoFile($this->phpcsFile), __DIR__ . '/modules/drupal6/testmodule.info');
     }
 
     /**
@@ -47,11 +47,11 @@ class ProjectUnitTest extends \PHPUnit_Framework_TestCase
     public function testInfoFileNestedDetection()
     {
         $this->phpcsFile->expects($this->any())
-          ->method('getFilename')
-          // The file does not exist, but doesn't matter for this test.
-          ->will($this->returnValue(dirname(__FILE__) . '/modules/drupal6/nested/test.php'));
+            ->method('getFilename')
+            // The file does not exist, but doesn't matter for this test.
+            ->will($this->returnValue(__DIR__ . '/modules/drupal6/nested/test.php'));
 
-        $this->assertEquals(Project::getInfoFile($this->phpcsFile), dirname(__FILE__) . '/modules/drupal6/testmodule.info');
+        $this->assertEquals(Project::getInfoFile($this->phpcsFile), __DIR__ . '/modules/drupal6/testmodule.info');
     }
 
     /**
@@ -62,9 +62,9 @@ class ProjectUnitTest extends \PHPUnit_Framework_TestCase
     public function testCoreVersion($filename, $core_version)
     {
         $this->phpcsFile->expects($this->any())
-          ->method('getFilename')
-          // The file does not exist, but doesn't matter for this test.
-          ->will($this->returnValue($filename));
+            ->method('getFilename')
+            // The file does not exist, but doesn't matter for this test.
+            ->will($this->returnValue($filename));
 
         $this->assertEquals(Project::getCoreVersion($this->phpcsFile), $core_version);
     }
@@ -74,9 +74,9 @@ class ProjectUnitTest extends \PHPUnit_Framework_TestCase
      */
     public function coreVersionProvider() {
         return array(
-            array(dirname(__FILE__) . '/modules/drupal6/nested/test.php', '6.x'),
-            array(dirname(__FILE__) . '/modules/drupal7/test.php', '7.x'),
-            array(dirname(__FILE__) . '/modules/drupal8/test.php', '8.x'),
+            array(__DIR__ . '/modules/drupal6/nested/test.php', '6.x'),
+            array(__DIR__ . '/modules/drupal7/test.php', '7.x'),
+            array(__DIR__ . '/modules/drupal8/test.php', '8.x'),
         );
     }
 

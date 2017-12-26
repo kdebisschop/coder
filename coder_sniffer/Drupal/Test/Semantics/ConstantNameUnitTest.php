@@ -15,7 +15,7 @@ class ConstantNameUnitTest extends CoderSniffUnitTest
      */
   protected function getTestFiles($testFileBase)
     {
-        $dir = dirname(__FILE__);
+        $dir = __DIR__;
         return array($dir.'/constant_test.install', $dir.'/constant_test.module');
 
     }//end getTestFiles()

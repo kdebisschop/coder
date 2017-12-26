@@ -134,11 +134,8 @@ $a = ['1', '2',
 // Array indentation.
 $x = array(
   'foo' => 'bar',
-  'fi' => long_function_call(
-    'hsdfsdmfsldkfnmdflkngdfngfg',
-    'fghfghfghfghfgh',
-    $z
-  ),
+  'fi' => long_function_call('hsdfsdmfsldkfnmdflkngdfngfg',
+    'fghfghfghfghfgh', $z),
   'a' => 'b',
   'foo' => array(
     'blu' => 1,
@@ -149,11 +146,8 @@ $x = array(
 );
 $x = [
   'foo' => 'bar',
-  'fi' => long_function_call(
-    'hsdfsdmfsldkfnmdflkngdfngfg',
-    'fghfghfghfghfgh',
-    $z
-  ),
+  'fi' => long_function_call('hsdfsdmfsldkfnmdflkngdfngfg',
+    'fghfghfghfghfgh', $z),
   'a' => 'b',
   'foo' => [
     'blu' => 1,
