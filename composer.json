@@ -17,8 +17,9 @@
     },
     "autoload": {
       "psr-0": {
+        "Coder\\": "coder_sniffer/Coder/",
         "Drupal\\": "coder_sniffer/Drupal/",
-        "DrupalPractice\\": "coder_sniffer/Drupal/"
+        "DrupalPractice\\": "coder_sniffer/DrupalPractice/"
       }
     },
     "require-dev": {
