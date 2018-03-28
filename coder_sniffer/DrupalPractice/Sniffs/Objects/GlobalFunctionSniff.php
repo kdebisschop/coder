@@ -12,7 +12,7 @@ namespace DrupalPractice\Sniffs\Objects;
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
 use DrupalPractice\Sniffs\Objects\GlobalDrupalSniff;
-use DrupalPractice\Project;
+use Coder\Project;
 
 /**
  * Checks that global functions like t() are not used in forms or controllers.

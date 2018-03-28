@@ -11,7 +11,7 @@ namespace DrupalPractice\Sniffs\Objects;
 
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
-use DrupalPractice\Project;
+use Coder\Project;
 
 /**
  * Checks that \Drupal::service() and friends is not used in forms, controllers, services.

@@ -11,7 +11,7 @@ namespace DrupalPractice\Sniffs\FunctionCalls;
 
 use PHP_CodeSniffer\Files\File;
 use DrupalPractice\Sniffs\Semantics\FunctionCall;
-use DrupalPractice\Project;
+use Coder\Project;
 
 /**
  * Check that UPDATE/DELETE queries are not used in db_query() in Drupal 7.

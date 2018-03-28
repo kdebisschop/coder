@@ -11,7 +11,7 @@ namespace DrupalPractice\Sniffs\General;
 
 use PHP_CodeSniffer\Files\File;
 use DrupalPractice\Sniffs\Semantics\FunctionCall;
-use DrupalPractice\Project;
+use Coder\Project;
 use PHP_CodeSniffer\Util\Tokens;
 
 /**

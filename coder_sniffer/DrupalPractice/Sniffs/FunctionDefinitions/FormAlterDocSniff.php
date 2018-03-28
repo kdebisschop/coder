@@ -11,7 +11,7 @@ namespace DrupalPractice\Sniffs\FunctionDefinitions;
 
 use PHP_CodeSniffer\Files\File;
 use DrupalPractice\Sniffs\Semantics\FunctionDefinition;
-use DrupalPractice\Project;
+use Coder\Project;
 
 /**
  * Checks that the comment "Implements hook_form_alter()." actually matches the

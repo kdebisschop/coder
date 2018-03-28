@@ -9,7 +9,7 @@
 
 namespace DrupalPractice\Sniffs\Constants;
 
-use DrupalPractice\Project;
+use Coder\Project;
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
 

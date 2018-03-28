@@ -11,7 +11,7 @@ namespace DrupalPractice\Sniffs\Objects;
 
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
-use DrupalPractice\Project;
+use Coder\Project;
 
 /**
  * Checks that Node::load() calls and friends are not used in forms, controllers or

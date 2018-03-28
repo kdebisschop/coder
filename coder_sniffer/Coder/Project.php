@@ -1,16 +1,16 @@
 <?php
 /**
- * \DrupalPractice\Project
+ * \Coder\Project
  *
  * @category PHP
  * @package  PHP_CodeSniffer
  * @link     http://pear.php.net/package/PHP_CodeSniffer
  */
 
-namespace DrupalPractice;
+namespace Coder;
 
 use PHP_CodeSniffer\Files\File;
-use DrupalPractice\Sniffs\InfoFiles\ClassFilesSniff;
+use Drupal\Sniffs\InfoFiles\ClassFilesSniff;
 use Symfony\Component\Yaml\Yaml;
 
 /**

@@ -10,7 +10,7 @@
 namespace Drupal\Sniffs\Arrays;
 
 use PHP_CodeSniffer\Files\File;
-use Drupal\Project;
+use Coder\Project;
 use PHP_CodeSniffer\Standards\Generic\Sniffs\Arrays\DisallowLongArraySyntaxSniff as GenericDisallowLongArraySyntaxSniff;
 
 /**

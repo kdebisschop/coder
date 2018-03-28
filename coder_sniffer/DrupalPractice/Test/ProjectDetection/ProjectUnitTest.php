@@ -2,7 +2,7 @@
 
 namespace DrupalPractice\ProjectDetection;
 
-use DrupalPractice\Project;
+use Coder\Project;
 
 /**
  * Tests that project and version detection works.

@@ -11,7 +11,7 @@ namespace DrupalPractice\Sniffs\Constants;
 
 use PHP_CodeSniffer\Files\File;
 use DrupalPractice\Sniffs\Semantics\FunctionCall;
-use DrupalPractice\Project;
+use Coder\Project;
 
 /**
  * Checks that global define() constants are not used in modules in Drupal 8.

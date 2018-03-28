@@ -11,7 +11,7 @@ namespace DrupalPractice\Sniffs\General;
 
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
-use DrupalPractice\Project;
+use Coder\Project;
 
 /**
  * Checks that classes without namespaces are properly prefixed with the module
